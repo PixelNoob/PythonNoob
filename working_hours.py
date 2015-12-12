@@ -6,4 +6,4 @@ print "USD per Hour", pay_per_hour / 15
 if pay_per_hour < 124:
     print "pobre"
 if pay_per_hour > 125:
-    print "Rico
+    print "Rico"
