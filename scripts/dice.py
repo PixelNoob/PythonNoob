@@ -13,6 +13,7 @@ while True:
     time.sleep(1)
     if int(guess) == int(dice):
         print ("You lucky bastard, YOU WIN!")
+        break
     else:
         print ("I am sorry bro, you lose!")
     time.sleep(1)
