@@ -1,11 +1,8 @@
-from urllib import urlopen
+import requests as r
 import json
 
-url = urlopen('https://poloniex.com/public?command=returnTicker').read()
-result = json.loads(url)
+result = r.get('https://poloniex.com/public?command=returnTicker').json()
 
 BTC = result['USDT_BTC']['last']
-Steem = result['BTC_STEEM']['last']
 
-print "BTC", round(float(BTC),2)
-print "Steem", Steem
+print("BTC:${} ".format(round(float(BTC))))
